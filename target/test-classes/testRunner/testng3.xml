@@ -1,0 +1,12 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Selenium Testing Suite">
+   <test name = "Parallel Tests"  thread-count = "2">
+      <classes>
+			<class name="com.qa.test2.ActionsMethodChainingRegisterPage" />
+			<class name="com.qa.test2.ActionsClickAndSendKeys" />
+			<class name="com.qa.test2.CustomCssSelector" />
+             
+      </classes>
+   </test>
+</suite>

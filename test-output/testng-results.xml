@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-02T14:42:50 IST" name="TestNG Regression Suite" finished-at="2026-01-02T14:43:07 IST" duration-ms="17413">
+    <groups>
+    </groups>
+    <test started-at="2026-01-02T14:42:50 IST" name="OrangeHrmTest" finished-at="2026-01-02T14:43:07 IST" duration-ms="17413">
+      <class name="com.qa.test2.DropDownHandleWithoutSelectClass">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:com.qa.test2.DropDownHandleWithoutSelectClass@17bffc17]" started-at="2026-01-02T14:42:50 IST" name="startDriver" finished-at="2026-01-02T14:42:52 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="testDropDownWithoutSelect()[pri:0, instance:com.qa.test2.DropDownHandleWithoutSelectClass@17bffc17]" started-at="2026-01-02T14:42:52 IST" name="testDropDownWithoutSelect" finished-at="2026-01-02T14:43:06 IST" duration-ms="14303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropDownWithoutSelect -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.qa.test2.DropDownHandleWithoutSelectClass@17bffc17]" started-at="2026-01-02T14:43:06 IST" name="quitDriver" finished-at="2026-01-02T14:43:07 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.qa.test2.DropDownHandleWithoutSelectClass -->
+    </test> <!-- OrangeHrmTest -->
+  </suite> <!-- TestNG Regression Suite -->
+</testng-results>
