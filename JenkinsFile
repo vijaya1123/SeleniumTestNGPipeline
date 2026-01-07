@@ -4,21 +4,29 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                bat "mvn -D clean test"
-            }
+                   git branch: 'master', 
+                   url: 'https://github.com/vijaya1123/SeleniumTestNGPipeline.git'
+                     bat "mvn -Dmaven.test.failure.ignore=true clean package"
 
-  stage('Publish sanity ChainTest Report'){
-            steps{
-                     publishHTML([allowMissing: false,
-                                  alwaysLinkToLastBuild: false, 
-                                  keepAll: true, 
+            }
+ 
+            post {                
+                // If Maven was able to run the tests, even if some of the test
+                // failed, record the test results and archive the jar file.
+                success {
+                   publishHTML([
+                       allowMissing: false, 
+                       alwaysLinkToLastBuild: false, 
+                       keepAll: false, 
+                       keepAll: true, 
                                   reportDir: 'target/chaintest', 
                                   reportFiles: 'Index.html', 
                                   reportName: 'HTML API Sanity ChainTest Report On Stage', 
-                                  reportTitles: ''])
+
+                       useWrapperFileDirectly: true])
+                }
             }
-        }
-      
         }
     }
 }
+
